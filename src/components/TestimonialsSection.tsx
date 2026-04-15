@@ -49,10 +49,18 @@ const TestimonialsSection = () => {
   return (
     <section ref={sectionRef} className="section-padding relative">
       <div className="max-w-4xl mx-auto">
-        <div className="font-code text-primary text-sm mb-2">{"// 05. Testimonials"}</div>
-        <h2 className="text-3xl md:text-4xl font-bold font-code mb-16">
-          <span className="text-primary">{">"}</span> echo $REVIEWS<span className="text-primary animate-pulse">_</span>
-        </h2>
+        {/* Header */}
+        <div className="text-center mb-12 md:mb-16">
+          <span className="font-mono text-primary text-sm tracking-wider">
+            {"// Reviews"}
+          </span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-3 mb-4 text-foreground">
+            Reviews & <span className="text-primary">Testimonials</span>
+          </h2>
+          <p className="text-muted-foreground max-w-xl mx-auto text-sm md:text-base">
+            Hear from my clients about their experience working with me.
+          </p>
+        </div>
 
         <div className="testimonial-container glass rounded-2xl p-8 md:p-12 relative box-glow">
           <Quote className="w-10 h-10 text-primary/20 absolute top-6 left-6" />

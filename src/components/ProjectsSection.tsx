@@ -81,10 +81,18 @@ const ProjectsSection = () => {
   return (
     <section id="projects" ref={sectionRef} className="section-padding relative">
       <div className="max-w-6xl mx-auto">
-        <div className="font-code text-primary text-sm mb-2">{"// 04. Projects"}</div>
-        <h2 className="text-3xl md:text-4xl font-bold font-code mb-16">
-          <span className="text-primary">{">"}</span> ls ./projects<span className="text-primary animate-pulse">_</span>
-        </h2>
+        {/* Header */}
+        <div className="text-center mb-12 md:mb-16">
+          <span className="font-mono text-primary text-sm tracking-wider">
+            {"// Projects"}
+          </span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-3 mb-4 text-foreground">
+            Projects & <span className="text-primary">Demos</span>
+          </h2>
+          <p className="text-muted-foreground max-w-xl mx-auto text-sm md:text-base">
+            A showcase of my work, featuring a variety of projects that demonstrate my skills and creativity.
+          </p>
+        </div>
 
         <div className="projects-grid grid md:grid-cols-2 gap-6">
           {projects.map((project) => (

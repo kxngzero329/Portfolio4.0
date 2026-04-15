@@ -7,7 +7,7 @@ const CodeScene3D = lazy(() => import("./CodeScene3D"));
 
 const HeroSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  
+  const commentRef = useRef<HTMLParagraphElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
   const ctaRef = useRef<HTMLDivElement>(null);
@@ -16,7 +16,8 @@ const HeroSection = () => {
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
 
-      tl.from(titleRef.current, { y: 60, opacity: 0, duration: 1 })
+      tl.from(commentRef.current, { y: 20, opacity: 0, duration: 0.6 })
+        .from(titleRef.current, { y: 60, opacity: 0, duration: 1 }, "-=0.3")
         .from(subtitleRef.current, { y: 40, opacity: 0, duration: 0.8 }, "-=0.5")
         .from(ctaRef.current, { y: 30, opacity: 0, duration: 0.6 }, "-=0.4");
 
@@ -64,8 +65,8 @@ const HeroSection = () => {
 
       <div className="relative z-10 max-w-6xl mx-auto w-full grid lg:grid-cols-2 gap-12 items-center">
         {/* Left */}
-        <div>
-          <p className="font-code text-primary text-sm mb-4 tracking-wider">
+        <div className="text-center lg:text-left">
+          <p ref={commentRef} className="font-code text-primary text-sm mb-4 tracking-wider">
             {"// Welcome to my portfolio"}
           </p>
           <h1
@@ -74,19 +75,17 @@ const HeroSection = () => {
           >
             <span className="text-foreground">Hi, I'm</span>
             <br />
-            <span className="gradient-text">Mogamat</span>
-            <br />
-            <span className="gradient-text">Smith</span>
+            <span className="gradient-text whitespace-nowrap">Mogamat Smith</span>
             <span className="text-primary animate-pulse">_</span>
           </h1>
           <p
             ref={subtitleRef}
-            className="text-lg md:text-xl text-muted-foreground max-w-lg mb-8"
+            className="text-lg md:text-xl text-muted-foreground max-w-lg mx-auto lg:mx-0 mb-8"
           >
             A 22-year-old <span className="text-primary">Full Stack Developer</span> crafting
             elegant digital experiences with clean code and creative solutions.
           </p>
-          <div ref={ctaRef} className="flex flex-wrap gap-4 items-center">
+          <div ref={ctaRef} className="flex flex-wrap gap-4 items-center justify-center lg:justify-start">
             <a
               href="#contact"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-semibold text-sm hover:shadow-[0_0_30px_hsl(160_100%_50%/0.3)] transition-all duration-300"

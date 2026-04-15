@@ -114,10 +114,18 @@ const SkillsSection = () => {
   return (
     <section id="skills" ref={sectionRef} className="section-padding relative">
       <div className="max-w-6xl mx-auto">
-        <div className="font-code text-primary text-sm mb-2">{"// 03. Skills"}</div>
-        <h2 className="text-3xl md:text-4xl font-bold font-code mb-16">
-          <span className="text-primary">{">"}</span> cat skills.md<span className="text-primary animate-pulse">_</span>
-        </h2>
+        {/* Header */}
+        <div className="text-center mb-12 md:mb-16">
+          <span className="font-mono text-primary text-sm tracking-wider">
+            {"// Skills"}
+          </span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-3 mb-4 text-foreground">
+            Skills & <span className="text-primary">Expertise</span>
+          </h2>
+          <p className="text-muted-foreground max-w-xl mx-auto text-sm md:text-base">
+            A comprehensive overview of my technical skills.
+          </p>
+        </div>
 
         <div className="skills-grid grid md:grid-cols-2 gap-6">
           {skillCategories.map((cat) => (

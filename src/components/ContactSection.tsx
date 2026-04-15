@@ -161,11 +161,11 @@ const ContactSection = () => {
 
       <div className="max-w-6xl mx-auto">
         <div className="font-code text-primary text-sm mb-2">
-          {"// 06. Contact"}
+          {"// Contact"}
         </div>
 
         <h2 className="text-3xl md:text-4xl font-bold font-code mb-16">
-          <span className="text-primary">{">"}</span> send --message
+          <span className="text-primary">{">"}</span> Get In Touch
           <span className="text-primary animate-pulse">_</span>
         </h2>
 

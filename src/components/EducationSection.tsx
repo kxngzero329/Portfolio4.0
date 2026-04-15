@@ -78,14 +78,18 @@ const EducationSection = () => {
       className="section-padding relative overflow-x-clip"
     >
       <div className="max-w-4xl mx-auto">
-        <div className="font-code text-primary text-sm mb-2">
-          {"// 02. Education & Experience"}
+        {/* Header */}
+        <div className="text-center mb-12 md:mb-16">
+          <span className="font-mono text-primary text-sm tracking-wider">
+            {"// Education"}
+          </span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-3 mb-4 text-foreground">
+            Education & <span className="text-primary">Experience</span>
+          </h2>
+          <p className="text-muted-foreground max-w-xl mx-auto text-sm md:text-base">
+            A timeline of my educational background and professional experience.
+          </p>
         </div>
-
-        <h2 className="text-3xl md:text-4xl font-bold font-code mb-16">
-          <span className="text-primary">{">"}</span> git log --oneline
-          <span className="text-primary animate-pulse">_</span>
-        </h2>
 
         <div className="timeline-container relative">
           {/* Center line */}

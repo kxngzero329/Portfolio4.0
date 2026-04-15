@@ -132,11 +132,11 @@ const AboutSection = () => {
     >
       <div className="max-w-6xl mx-auto">
         <div className="font-code text-primary text-sm mb-2">
-          {"// 01. About Me"}
+          {"// About Me"}
         </div>
 
         <h2 className="text-3xl md:text-4xl font-bold font-code mb-12">
-          <span className="text-primary">{">"}</span> whoami
+          <span className="text-primary">{">"}</span> Who I Am
           <span className="text-primary animate-pulse">_</span>
         </h2>
 
