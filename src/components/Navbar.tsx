@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Sun, Moon } from "lucide-react";
+import logo from "../assets/logo.png"; // ✅ FIXED
 
 const navItems = [
   { label: "Home", href: "#home" },
@@ -62,7 +63,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center px-3">
           <img
-            src="./src/assets/logo.png"
+            src={logo} // ✅ FIXED
             alt="M.Smith logo"
             className="h-6 w-auto object-contain"
           />
@@ -121,7 +122,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center justify-center flex-1">
           <img
-            src="./src/assets/logo.png"
+            src={logo} // ✅ FIXED
             alt="M.Smith logo"
             className="h-6 w-auto object-contain"
           />
