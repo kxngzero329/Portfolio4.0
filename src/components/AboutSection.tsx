@@ -2,7 +2,7 @@ import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Code2, Coffee, Rocket, Zap } from "lucide-react";
-import headshot from "../assets/smith.jpg";
+import headshot from "../assets/headshot-of-zuhayr-smith.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -165,7 +165,7 @@ const AboutSection = () => {
             </p>
           </div>
 
-          <div className="relative group rounded-xl w-full max-w-[350px] overflow-hidden md:ml-[8rem] border border-border bg-black/40 backdrop-blur-sm">
+          <div className="relative group rounded-xl w-full max-w-[350px] overflow-hidden mx-auto md:mx-0 md:ml-[8rem] border border-border bg-black/40 backdrop-blur-sm">
             {/* Terminal Header */}
             <div className="flex items-center gap-2 px-4 py-3 border-b border-border bg-black/60">
               <div className="w-3 h-3 rounded-full bg-destructive/80" />
