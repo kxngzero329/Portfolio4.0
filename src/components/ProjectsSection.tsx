@@ -28,11 +28,11 @@ const projects = [
     live: "https://moderntechs.netlify.app/",
   },
   {
-    title: "BrewCraft E-Commerce Store",
-    desc: "A full-featured online store for a fictional craft brewery, featuring product listings, shopping cart, and simulated checkout process.",
-    tech: ["PHP", "MySQL", "CSS", "JavaScript"],
+    title: "CTSC Travel",
+    desc: "Premium shuttle services in Cape Town, including airport transfers, private chauffeur services, group transport, corporate travel, and Cape Town tours.",
+    tech: ["Typescript", "Supabase", "Tailwind CSS", "Yoco"],
     color: "orange",
-    live: "https://brewcraft.wuaze.com/",
+    live: "https://ctsctravel.com/",
   },
 ];
 
