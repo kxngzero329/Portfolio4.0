@@ -1,6 +1,6 @@
 import { useEffect, useRef, lazy, Suspense } from "react";
 import gsap from "gsap";
-import { ChevronDown, Code2, UserCircle, Mail } from "lucide-react";
+import { ChevronDown, Code2, Download, UserCircle, Mail } from "lucide-react";
 
 const CodeScene3D = lazy(() => import("./CodeScene3D"));
 
@@ -98,14 +98,12 @@ const HeroSection = () => {
               Get In Touch
             </a>
             <a
-              href="#projects"
+              href="/cv/Mogamat_Shuhair_Smith_CV.pdf"
+              download="Mogamat_Shuhair_Smith_CV.pdf"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-primary/30 text-primary font-semibold text-sm hover:bg-primary/10 transition-all duration-300"
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
-              }}
             >
-              View Projects
+              <Download className="w-4 h-4" />
+              Download CV
             </a>
             <div className="flex gap-3 ml-2">
               <a href="https://github.com/kxngzero329" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
