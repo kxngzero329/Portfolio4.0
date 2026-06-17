@@ -2,7 +2,7 @@ import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Code2, Coffee, Rocket, Zap } from "lucide-react";
-import headshot from "../assets/headshot-of-zuhayr-smith.jpg";
+import headshot from "../assets/headshot-of-msmith.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
