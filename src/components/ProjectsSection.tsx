@@ -17,22 +17,22 @@ const projects = [
     title: "PodHut Podcast Platform",
     desc: "A modern podcast hosting and streaming platform with personalized recommendations and user-friendly interface.",
     tech: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Supabase"],
-    color: "cyan",
+    color: "orange",
     live: "https://podhut.netlify.app/",
   },
   {
     title: "Modern Tech Solutions",
     desc: "An HR management system for a tech company, featuring employee profiles, project tracking, performance analytics and employee payroll.",
     tech: ["React", "TypeScript", "Tailwind CSS", "REST API", "Supabase"],
-    color: "accent",
+    color: "cyan",
     live: "https://moderntechs.netlify.app/",
   },
   {
-    title: "CTSC Travel",
-    desc: "Premium shuttle services in Cape Town, including airport transfers, private chauffeur services, group transport, corporate travel, and Cape Town tours.",
-    tech: ["Typescript", "Supabase", "Tailwind CSS", "Yoco"],
-    color: "orange",
-    live: "https://ctsctravel.com/",
+    title: "Lyrical-Ly",
+    desc: "A lyrics search and discovery platform that allows users to find lyrics for their favorite songs and can play the songs directly from YouTube, Spotify, and Apple Music.",
+    tech: ["React", "REST API", "Tailwind CSS", "Typescript"],
+    color: "accent",
+    live: "https://lyrical-ly.netlify.app/",
   },
 ];
 
@@ -122,7 +122,7 @@ const ProjectsSection = () => {
                   ))}
                 </div>
                 <div className="flex gap-4">
-                  <a href={project.live} className="flex items-center gap-1 text-sm text-muted-foreground hover:text-primary transition-colors font-code">
+                  <a href={project.live} target="_blank" rel="noreferrer noopener" className="flex items-center gap-1 text-sm text-muted-foreground hover:text-primary transition-colors font-code">
                     <ExternalLink className="w-4 h-4" /> Live Demo
                   </a>
                 </div>
