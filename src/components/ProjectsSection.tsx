@@ -7,11 +7,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
-    title: "Astrielle E-Commerce Store",
-    desc: "A full-featured online clothing store with user authentication, product management, and simulated payment integration.",
-    tech: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Supabase"],
+    title: "Deenflow Islamic Companion",
+    desc: "A web application that provides accurate Islamic prayer times based on the user's location, along with the Holy Quran and Daily Duas.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "REST API"],
     color: "primary",
-    live: "https://astrielle.netlify.app/",
+    live: "https://deenflowz.netlify.app/",
   },
   {
     title: "PodHut Podcast Platform",
@@ -23,7 +23,7 @@ const projects = [
   {
     title: "Modern Tech Solutions",
     desc: "An HR management system for a tech company, featuring employee profiles, project tracking, performance analytics and employee payroll.",
-    tech: ["React", "TypeScript", "Tailwind CSS", "REST API", "Supabase"],
+    tech: ["React", "TypeScript", "Tailwind CSS", "REST API"],
     color: "cyan",
     live: "https://moderntechs.netlify.app/",
   },
