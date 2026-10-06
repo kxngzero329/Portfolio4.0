@@ -7,25 +7,25 @@ gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
-    title: "Deenflow Islamic Companion",
+    title: "NexWeb SA",
     desc: "A web application that provides accurate Islamic prayer times based on the user's location, along with the Holy Quran and Daily Duas.",
-    tech: ["React", "TypeScript", "Tailwind CSS", "REST API"],
+    tech: ["Next.js", "Tailwind CSS", "TypeScript", "Node.js"],
     color: "primary",
-    live: "https://deenflowz.netlify.app/",
+    live: "https://nexwebsa.co.za",
   },
   {
-    title: "PodHut Podcast Platform",
-    desc: "A modern podcast hosting and streaming platform with personalized recommendations and user-friendly interface.",
-    tech: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Supabase"],
+    title: "BashCutz",
+    desc: "A barber shop website that allows users to book appointments, view services, and contact the barber shop directly.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Supabase", "PostgreSQL"],
     color: "orange",
-    live: "https://podhut.netlify.app/",
+    live: "https://bashcutz.co.za",
   },
   {
-    title: "Modern Tech Solutions",
-    desc: "An HR management system for a tech company, featuring employee profiles, project tracking, performance analytics and employee payroll.",
-    tech: ["React", "TypeScript", "Tailwind CSS", "REST API"],
+    title: "TravelBuzz Shuttles",
+    desc: "A shuttle service website that allows users to book shuttles, airport transfers, and contact the shuttle service directly.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Node.js", "Supabase"],
     color: "cyan",
-    live: "https://moderntechs.netlify.app/",
+    live: "https://travelbuzzshuttles.com",
   },
   {
     title: "Lyrical-Ly",
